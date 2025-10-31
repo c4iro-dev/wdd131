@@ -17,10 +17,6 @@
 
   /* Functional / feedback */
   --clr-accent-warn: #ffb86b;     /* Warm industrial amber */
-
-  /* Utility */
-  --clr-border: #383843;
-  --clr-shadow: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -90,7 +86,8 @@ nav a:hover {
 }
 
 h1 {
-    display: none;
+    grid-column: 1/4;
+    text-align: center;
 }
 
 main {
