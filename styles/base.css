@@ -113,7 +113,6 @@ main {
 
 .abt-top {
     display: flex;
-    /* grid-template-columns: 3fr 1fr;    */
     padding: 20px;
     align-items: center;
 }
@@ -121,8 +120,6 @@ main {
 .abt-text {
     padding: 15px;    
 }
-
-
 
 .abt-text p {
     margin: 0;
