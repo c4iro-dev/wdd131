@@ -182,25 +182,27 @@ main {
     grid-row: 2/3;
     display: flex;
     padding: 15px;
-    color: var(--clr-text-secondary)
-}
-
-.country-details img {
-    width: 80%;
-    height: auto;
-    margin: 15px 0;
-    object-fit: contain;
+    color: var(--clr-text-secondary);
 }
 
 .country-details p {
     line-height: 2rem;
     flex: 2;
+    margin-left: 15px;
 }
 
 .flag-info {    
     font-size: .7rem;  
     flex: 1;
+    padding: 10px;
     align-content: center;
+}
+
+.flag-info img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    object-fit: contain;
 }
 
 .card2 {
