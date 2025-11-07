@@ -11,6 +11,16 @@ hamButton.addEventListener("click", () => {
     navContainer.classList.toggle('show');
 });
 
+// Remove the .show when screen larger than mobile width
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+        hamButton.classList.remove('show');
+        navItems.classList.remove('show');
+        title.classList.remove('show');
+        navContainer.classList.remove('show');
+    }
+});
+
 // Footer Logic
 const today = new Date();
 document.getElementById("currentYear").innerHTML = `${today.getFullYear()}`;

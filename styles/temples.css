@@ -106,13 +106,15 @@ nav a:hover {
 
 #menu {
     display: block;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
     background-color: var(--clr-bg-tertiary);
     color: var(--clr-text-primary);
     text-align: right;
+    position: absolute;
+    right: 1rem;
 }
 
 #menu::before {
