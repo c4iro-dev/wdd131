@@ -35,8 +35,7 @@ header {
 }
 
 .nav-container {
-    display: flex;
-    
+    display: flex;    
     background-color: var(--clr-bg-tertiary);
 }
 
@@ -140,6 +139,10 @@ main {
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr;
+}
+
+h2 {
+    text-align: center;
 }
 
 figure {
