@@ -85,16 +85,16 @@ nav a:hover {
     text-shadow: 0 0 10px var(--clr-accent-secondary);
 }
 
-h1 {
-    grid-column: 1/4;
-    text-align: center;
-}
-
 main {
     margin: 0;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+    grid-column: 1/4;
+    text-align: center;
 }
 
 .card {
