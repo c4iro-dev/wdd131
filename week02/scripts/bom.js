@@ -14,3 +14,10 @@ button.addEventListener('click', function() {
         console.log("Nice.");
     }
 });
+
+btn_del.addEventListener('click', () => {
+    list.removeChild(li);
+    input.focus();
+    input.value('');
+    input.focus();
+});
