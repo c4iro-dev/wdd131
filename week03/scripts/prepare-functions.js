@@ -9,4 +9,4 @@ const fullName = function (first, last) {
 const fullName = (first, last) => `${first} ${last}`;
 
 
-document.getElementById("fullName").innerHTML(fullName);
+document.getElementById("fullName").innerHTML = fullName(first, last);
