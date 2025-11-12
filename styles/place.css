@@ -1,0 +1,54 @@
+:root {
+  /* Backgrounds */
+  --clr-bg-primary: #0d0d0f;      /* Page background */
+  --clr-bg-secondary: #1e1e26;    /* Cards / panels */
+  --clr-bg-tertiary: #383843;     /* Borders / elevated surfaces */
+
+  /* Text */
+  --clr-text-primary: #e8e8e8;    /* High-contrast white-gray text */
+  --clr-text-secondary: #b3b3b3;  /* Muted paragraph text */
+  --clr-text-accent: #00eaff;     /* Cyan or magenta accent text */
+  --clr-text-accent2: #ff70c9;
+
+  /* Accents */
+  --clr-accent-primary: #ff008c;  /* Pink neon */
+  --clr-accent-secondary: #00eaff;/* Cyan neon */
+  --clr-accent-muted: #915eff;    /* Soft purple blend */
+
+  /* Functional / feedback */
+  --clr-accent-warn: #ffb86b;     /* Warm industrial amber */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-bg-primary);
+    color: var(--clr-text-primary);
+    font-family: "Orbitron", sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    background-color: var(--clr-bg-tertiary);
+}
+
+footer p {
+    margin: 5px;
+    font-size: .8rem;
+}
+
+#lastModified {
+    color: var(--clr-text-accent);
+    font-size: .6rem;
+    font-weight: 600;
+}
