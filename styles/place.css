@@ -12,12 +12,19 @@
   --clr-accent-secondary: #00aaff; /* Optional lighter blue for minor accents */
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: var(--clr-bg-primary);
     color: var(--clr-text-primary);
     font-family: "Orbitron", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero img {
@@ -93,13 +100,14 @@ hr {
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     text-align: center;
     margin: 0;
     padding: 25px;
     background-color: var(--clr-bg-secondary);
     color: var(--clr-text-secondary);
+    flex: 1;
 }
 
 footer p {
