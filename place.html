@@ -9,14 +9,85 @@
         <link rel="stylesheet" href="styles/place.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
         <script defer src="scripts/place.js"></script>
     </head>
     <body>
         <header>
-            <h1>Cuba</h1>
+            <h1>Cuba</h1>            
         </header>
-        <main></main>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/jaguey-large.webp">                    
+                    <img src="images/jaguey-small.webp" alt="Parroquia Nuestra Señora de Altagracia de Jagüey Grande, Matanzas, Cuba" width="320" height="480">
+                </picture>
+            </div>
+            <section class="data">
+                <h2>Data</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Area:</th>
+                            <td>110,860 km²</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Population:</th>
+                            <td>10,966,038</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Capital:</th>
+                            <td>Havana</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Languages</th>
+                            <td>Spanish</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Currency:</th>
+                            <td>Cuban Peso (CUP)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Time Zone:</th>
+                            <td>UTC-5 (Standard)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Calling Code:</th>
+                            <td>+53</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Internet TLD:</th>
+                            <td>.cu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section class="weather">
+                <h2>Weather <span>⛅</span></h2>
+                <img src="images/weather.svg" alt="Icon of a sun behind a rain cloud">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Temperature:</th>
+                            <td id="temp"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Conditions:</th>
+                            <td>Cloudy</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wind:</th>
+                            <td id="wind"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wind Chill:</th>
+                            <td id="chill"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
         <footer>
             <p>©<span id="currentYear"></span> | Dan Reyes-Cairo | California, USA</p>
             <p id="lastModified"></p>
