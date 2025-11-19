@@ -1,0 +1,20 @@
+.lazy-img {
+    display: block;
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.lazy-img.visible {
+    animation: fade-in 15s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
