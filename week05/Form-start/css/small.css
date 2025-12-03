@@ -89,9 +89,9 @@ main {
     border-radius: 6px;
     padding: .75rem;
     color: #555;
-    width: 100%;
+    width: 96%;
     max-width: 400px;
-
+    appearance: none;
 }
 
 .wf1 input[type="radio"],
@@ -118,6 +118,8 @@ main {
 .wf1 input:required:valid {
     border-bottom: solid 8px green;
 }
+
+
 
 /*----------- FOOTER --------------*/
 footer {
