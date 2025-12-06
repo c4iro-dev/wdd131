@@ -7,8 +7,44 @@
         <meta name="description" content="A simple html form demonstrating appropriate field design and best practices.">
         <meta name="author" content="Dan Reyes-Cairo">
         <link rel="stylesheet" href="styles/form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">        
         <script defer src="scripts/form.js"></script>
     </head>
     <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <form action="review.html" method="get" class="pr1">
+                <label>Product Name <select name="product-name" id="product-name" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select></label>
+                <div>Overall Rating</div>
+                <label class="radio-check-text"><input type="radio" name="rating" id="rating" required>1</label>
+                <label class="radio-check-text"><input type="radio" name="rating" id="rating" required>2</label>
+                <label class="radio-check-text"><input type="radio" name="rating" id="rating" required>3</label>
+                <label class="radio-check-text"><input type="radio" name="rating" id="rating" required>4</label>
+                <label class="radio-check-text"><input type="radio" name="rating" id="rating" required>5</label>                    
+                
+                <label>Date of Installation <input type="date" id="installation-date" name="installation-date" required></label>
+
+                <div>Useful Features</div>
+                <label class="radio-check-text"><input type="checkbox" id="features" name="features" value="durability">Durability</label>
+                <label class="radio-check-text"><input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">Ease of Use</label>
+                <label class="radio-check-text"><input type="checkbox" id="performance" name="performance" value="performance">Performance</label>
+                <label class="radio-check-text"><input type="checkbox" id="design" name="design" value="design">Design</label>
+
+                <label>Written Review <span>*</span><input type="textarea" id="review" name="review"></label>
+                <label>User Name <span>*</span><input type="textarea" id="user-name" name="user-name"></label>
+
+                <input type="submit" value="Submit Review">
+            </form>
+        </main>
+        <footer>
+            <p>©<span id="currentYear"></span> | Dan Reyes-Cairo | California, USA</p>
+            <p id="lastModified"></p>
+        </footer>
     </body>
 </html>
