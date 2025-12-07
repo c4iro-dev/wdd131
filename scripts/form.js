@@ -35,7 +35,7 @@ let product_html = products.map((product) => {
 document.querySelector("#product-name").insertAdjacentHTML("beforeend", product_html);
 
 // Review Counter
-let btn_submit = document.querySelector("input[type='submit']");
+let btn_submit = document.querySelector("form.pr1");
 btn_submit.addEventListener('submit', function (event) {
     let numReviews = Number(window.localStorage.getItem('numReviews-ls')) || 0;
     numReviews++;
