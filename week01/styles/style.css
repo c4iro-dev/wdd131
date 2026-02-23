@@ -1,0 +1,23 @@
+
+body {
+    font-size: 1rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
