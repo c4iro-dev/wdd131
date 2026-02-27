@@ -8,10 +8,13 @@
         <meta name="author" content="Dan Reyes-Cairo">
         <link rel="stylesheet" href="./styles/base.css">
         <script src="./scripts/getdates.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>            
-            <span>WDD 131: Dynamic Web Fundamentals</span>            
+            <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>            
             <nav>
                 <ul>
                     <li><a href="#">LinkedIn</a></li>
@@ -32,7 +35,7 @@
                     </div>
                     <div class="countryInfo">
                         <div class="countryTitle">
-                            <h3>California, USA</h3>
+                            <h2>California, USA</h2>
                             <hr>
                         </div>                        
                         <div class="countryContent">
@@ -59,7 +62,7 @@
         </main>
         <footer>
             <p>© <span id="currentyear"></span> | Dan Reyes-Cairo | California</p>
-            <span class="highlight"><p id="lastModified"></p></span>
+            <p id="lastModified"></p>
         </footer>
     </body>
 </html>
