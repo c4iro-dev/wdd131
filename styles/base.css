@@ -138,9 +138,10 @@ footer {
 }
 
 footer p {
-    margin: 5px;     
+    margin: 0;      
 }
 
 footer .highlight {
     color: yellow;
+    font-size: .8rem;    
 }
