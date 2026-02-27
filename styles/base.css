@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;    
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header span {
+    display: block;
+    background-color: darkslategray;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #333;
+}
+
+h1 {
+    text-align: center;    
+    font-weight: 400;
+    grid-column: 1 / 3;
+    font-size: 2.5rem;
+    margin: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;       
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+main {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto 1fr;
+    gap: 15px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 0px;   
+    overflow: hidden; 
+}
+
+.cardTitle {
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+    margin: 0;    
+    padding: 10px;    
+}
+
+.cardContent {
+    padding: 10px;
+    font-size: .9rem;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    line-height: 1.6;
+}
+
+.cardContent h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.cardContent li {
+    margin-bottom: .5rem;    
+}
+
+.aboutMe {
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: flex-start;
+}
+
+.aboutMe img {
+    margin: 15px; 
+    width: 120px;
+    height: auto;
+}
+
+.countryInfo {
+    grid-column: 1 / 2;
+}
+
+.countryContent {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.flagInfo {
+    margin: 15px 0;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.flagInfo img {
+    width: 100px;
+    margin: 15px;
+}
+
+.flagInfo span {
+    font-size: .7rem;
+    margin: 5px 15px;
+}
+
+footer {
+    background-color: darkslategray;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: .9rem;
+}
+
+footer p {
+    margin: 5px;     
+}
+
+footer .highlight {
+    color: yellow;
+}

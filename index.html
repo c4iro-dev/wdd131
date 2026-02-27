@@ -7,13 +7,11 @@
         <meta name="description" content="WDD 131 – Dynamic Web Fundamentals personal homepage for Dan Reyes-Cairo with history, interests and origin information">
         <meta name="author" content="Dan Reyes-Cairo">
         <link rel="stylesheet" href="./styles/base.css">
-        <link rel="stylesheet" href="./scripts/getdates.js">
+        <link rel="stylesheet" href="./scripts/getdates.js" defer>
     </head>
     <body>
-        <header>
-            <div class="hero">
-                <span>WDD 131: Dynamic Web Fundamentals</span>
-            </div>
+        <header>            
+            <span>WDD 131: Dynamic Web Fundamentals</span>            
             <nav>
                 <ul>
                     <li><a href="#">LinkedIn</a></li>
@@ -27,21 +25,41 @@
             <h1>Dan Reyes-Cairo</h1>
             <section class="card">
                 <div class="cardTitle">About Me</div>
-                <div class="cardContent">Quick intro</div>
+                <div class="cardContent">
+                    <div class="aboutMe">
+                        <p>Hi, I'm <span>Dan Reyes-Cairo</span> — a software development student and aspiring entrepreneur based in <span>California</span>. I currently work in customer experience operations for EVCS, a public EV charging company based in Los Angeles. When I'm not working or studying, I enjoy spending time with my family, exploring new places, discovering and writing music, and finding inspiration in media, nature, and code.</p>
+                        <img src="./images/profile.jpeg" alt="Dan Reyes-Cairo">
+                    </div>
+                    <div class="countryInfo">
+                        <div class="countryTitle">
+                            <h3>California, USA</h3>
+                            <hr>
+                        </div>                        
+                        <div class="countryContent">
+                            <div class="flagInfo">
+                                <img src="./images/usa-flag.png" alt="Flag of the United States of America">
+                                <span class="flagLabel">Official Flag of The United States of America</span>
+                            </div>
+                            <p>The United States has diverse landscapes, from the deserts of the Southwest to the forests of the Pacific Northwest. It is the birthplace of the Church of Jesus Christ of Latter-day Saints and is known for its cultural and technological influence around the world.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="card">
                 <div class="cardTitle">Web Dev Resources</div>
                 <div class="cardContent">
                     <ul>
-                        <li>Link 1</li>
-                        <li>Link 2</li>
+                        <li><a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a></li>
+                        <li><a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer's Network</a></li>
+                        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                        <li><a href="https://squoosh.app/" target="_blank">Squoosh</a></li>
                     </ul>
                 </div>
             </section>
         </main>
         <footer>
             <p>© <span id="currentyear"></span> | Dan Reyes-Cairo | California</p>
-            <p id="lastModified"></p>
+            <span class="highlight"><p id="lastModified">Test</p></span>
         </footer>
     </body>
 </html>
